@@ -27,7 +27,6 @@ def index():
 
 @app.errorhandler(Exception)
 def handle_error(error):
-    # Get the error code, default to 500
     error_code = getattr(error, 'code', 500)
     return render_template('error.html', error_code=error_code), error_code
 
