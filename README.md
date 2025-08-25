@@ -1,5 +1,4 @@
 # alex-teaches
- Alex Teaches
 
 1. Web -> Add a new web app
     a. Manual Configuration
