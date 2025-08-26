@@ -34,28 +34,28 @@ Reload and enjoy
 alex-teaches/
 │
 ├── app/
-│   ├── __init__.py          # App factory + OOP FlaskApp class
-│   ├── routes/              # API routes (Blueprints)
+│   ├── __init__.py        # App factory + OOP FlaskApp class
+│   ├── routes/            # API routes (Blueprints)
 │   │   ├── __init__.py
 │   │   └── main.py
-│   ├── services/            # Business logic
+│   ├── services/          # Business logic
 │   │   └── example_service.py
-│   ├── models/              # Database models
+│   ├── models/            # Database models
 │   │   └── __init__.py
-│   ├── extensions.py        # Extensions (db, login_manager, etc.)
-│   └── utils/               # Helpers/utilities
+│   ├── extensions.py      # Extensions (db, login_manager, etc.)
+│   └── utils/             # Helpers/utilities
 │       └── __init__.py
 │
-├── config/                  # Different configs (Dev, Test, Prod)
+├── config/                # Different configs (Dev, Test, Prod)
 │   ├── __init__.py
 │   ├── default.py
 │   ├── development.py
 │   ├── production.py
 │   └── testing.py
 │
-├── tests/                   # Unit tests
+├── tests/                 # Unit tests
 │   └── test_main.py
 │
-├── .env                     # Environment variables
-├── requirements.txt         # Dependencies
-├── run.py                   # Entry point
+├── .env                   # Environment variables
+├── requirements.txt       # Dependencies
+└── run.py                 # Entry point

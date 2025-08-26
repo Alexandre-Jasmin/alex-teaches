@@ -7,8 +7,8 @@ class FlaskApp:
     def __init__(self, config_name="development"):
         self.app = Flask(__name__)
         self.app.config.from_object(get_config(config_name))
-        self.register_extensions()
-        self.register_blueprints()
+        self.register_extensions() # Initialize extensions like db
+        self.register_blueprints() # Register blueprints
 
     def register_extensions(self):
         db.init_app(self.app)
