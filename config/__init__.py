@@ -7,4 +7,4 @@ def get_config(env):
         return ProductionConfig
     elif env == "testing":
         return TestingConfig
-    return DevelopmentConfig
+    return DevelopmentConfig # Used live

@@ -34,28 +34,35 @@ Reload and enjoy
 alex-teaches/
 │
 ├── app/
-│   ├── __init__.py        # App factory + OOP FlaskApp class
-│   ├── routes/            # API routes (Blueprints)
-│   │   ├── __init__.py
-│   │   └── main.py
-│   ├── services/          # Business logic
-│   │   └── example_service.py
-│   ├── models/            # Database models
-│   │   └── __init__.py
-│   ├── extensions.py      # Extensions (db, login_manager, etc.)
-│   └── utils/             # Helpers/utilities
-│       └── __init__.py
+│   ├── __init__.py             # App factory + OOP FlaskApp class
+│   ├── extensions.py           # Extensions (db, login_manager, etc.) Flask extension setup
+│   ├── routes/                 # API routes (Blueprints)
+│   │   ├── __init__.py         #
+│   │   └── main.py             #
+│   ├── services/               # Business logic (e.g., calculating grades)
+│   │   └── example_service.py  #
+│   ├── models/                 # Database related models
+│   │   └── __init__.py         ?
+│   ├── utils/                  # General helpers/utilities
+│   │   └── __init__.py         # Empty
+|   ├── templates/              #
+│   │   ├── adult_templates/    # 
+|   |   |   └── base.html       # Shared html code
+│   │   ├── index.html          #
+│   │   └── about.html          #
+
+├── config/                     # Different configs (Dev, Test, Prod)
+│   ├── __init__.py             # Loads configuration based on string
+│   ├── default.py              # Always loads
+│   ├── development.py          # Used during development
+│   ├── production.py           #
+│   └── testing.py              #
 │
-├── config/                # Different configs (Dev, Test, Prod)
-│   ├── __init__.py
-│   ├── default.py
-│   ├── development.py
-│   ├── production.py
-│   └── testing.py
+├── tests/                      # Unit tests
 │
-├── tests/                 # Unit tests
-│   └── test_main.py
-│
-├── .env                   # Environment variables
-├── requirements.txt       # Dependencies
-└── run.py                 # Entry point
+├── .env                        # Environment variables
+├── .gitattributes              # 
+├── .gitignore                  # Files not pushed
+├── README.md                   # Project structure
+├── requirements.txt            # Dependencies
+└── run.py                      # Entry point
